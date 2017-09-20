@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv bash
+
+exec mysqld_safe --pid-file=$PID_FILE
