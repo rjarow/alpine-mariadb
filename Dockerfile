@@ -1,3 +1,4 @@
+### From alpine latest + s6 latest
 FROM rjarow/alpine64-s6
 LABEL maintainer "Rich J github.com/rjarow" architecture="AMD64/x86_64"
 
