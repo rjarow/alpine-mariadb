@@ -9,7 +9,7 @@ services:
 - docker
 install:
 - docker build -t mariadb .
-- docker run -d -p 127.0.0.1:3306:3306 --name mariadb mariadb
+- docker run -d -p 127.0.0.1:80:3306 --name mariadb mariadb
 script:
 - docker ps | grep -q mariadb
 - export TAG=`if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master"
